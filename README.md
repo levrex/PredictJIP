@@ -1,11 +1,10 @@
 # PredictJIP
-Repository featuring models for the prediction of Joint Involvement Patterns (JIP) in Rheumatoid arthrtitis
-
-For more information on the clinical relevance of the JIPs read our study : https://www.nature.com/articles/s41746-025-01997-1
+To facilitate the use of Joint Involvement Patterns (JIPs) in research, we developed surrogate models to detect them using only a few clinical features.
 
 ## Background
-To make our clusters easier to use across different centers, we developed machine-learning surrogate models that can predict a patient’s JIP using a smaller set of variables. Because the primary axes of variation in our data are the *hand–feet differentiation* and the *oligo–poly joint involvement* (few vs. many affected joints), we found that JIP can be predicted reasonably well even with limited information.  
-We therefore built two probabilistic models, each designed around the types of joint assessments that centers most commonly collect. These models output class probabilities, enabling users to choose decision thresholds that best fit their desired balance of precision, sensitivity, or overall accuracy. However, note that applying a very stringent cut-off may result in patients not being assigned to any cluster at all.
+JIPs stratify rheumatoid arthritis patients into four phenotypes based on affected joint distribution: JIP-foot (predominantly foot involvement), JIP-oligo (few affected joints), JIP-hand (predominantly hand involvement), and JIP-poly (many affected joints). These patterns correspond to differences in treatment outcomes and synovial histology. For more information on the clinical relevance of JIPs, see our study: https://www.nature.com/articles/s41746-025-01997-1 
+
+We built two probabilistic models, each designed around the types of joint assessments that centers most commonly collect. These models output class probabilities, enabling users to choose decision thresholds that best fit their desired balance of precision, sensitivity, or overall accuracy. However, note that applying a very stringent cut-off may result in patients not being assigned to any cluster at all.
 
 The two models—each validated on a hold-out set—are based on the following joint schemes (and ACPA, RF, Age & Sex):
 - DAS44 (minimally required)
