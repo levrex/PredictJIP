@@ -8,7 +8,9 @@ We built two probabilistic models, each designed around the types of joint asses
 
 The two models—each validated on a hold-out set—are based on the following joint schemes (and ACPA, RF, Age & Sex):
 - DAS44 (minimally required)
-- DAS66/68 (ideal)
+- DAS66/68 (ideal)  
+
+We also have a model for DAS28 joint scheme, but since the Foot joints are not measured here. It is not preferred.
 
 ## Overview of JIP-related Github Repo's
 ![alt text](figures/md/Overview_JIP_related_git.png)
