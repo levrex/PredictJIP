@@ -7,8 +7,9 @@ JIPs stratify rheumatoid arthritis patients into four phenotypes based on affect
 We built two probabilistic models, each designed around the types of joint assessments that centers most commonly collect. These models output class probabilities, enabling users to choose decision thresholds that best fit their desired balance of precision, sensitivity, or overall accuracy. However, note that applying a very stringent cut-off may result in patients not being assigned to any cluster at all.
 
 The two models—each validated on a hold-out set—are based on the following joint schemes (and ACPA, RF, Age & Sex):
-- DAS44 (minimally required)
-- DAS66/68 (ideal)  
+- DAS44 (minimally required for identifying JIP-foot)
+- DAS66/68 (ideal)
+- DAS28 (suboptimal)
 
 We also have a model for DAS28 joint scheme, but since the Foot joints are not measured here. It is not preferred.
 
@@ -25,12 +26,15 @@ In order to identify JIPs, you have three options:
 * `README.md`: This file
 * `requirements.txt`: Prerequisite python modules (with version numbers) to run code
 * `figures/md`: Figures used for the readme
+* `figures/das28`: Figures for the DAS28 model (i.e. SHAP feature importance plot)
 * `figures/das44`: Figures for the DAS44 model (i.e. SHAP feature importance plot)
 * `models/*`: Contains the final models for predicting the JIP
+  * `models/das28/JIP_xgb_pred_28.pk` : Pickle object containing DAS28 model (also needs age, sex, acpa & rf)
   * `models/das44/JIP_xgb_pred_44.pk` : Pickle object containing DAS44 model (also needs age, sex, acpa & rf)
 * `src/*`: Important functions for feature engineering
+  * `src/DAS28_joints.py`: Contains lists of DAS28 joints for each anatomical location (based on Leiden EHR naming convention) 
   * `src/DAS44_joints.py`: Contains lists of DAS44 joints for each anatomical location (based on Leiden EHR naming convention)
-  * `src/DAS66_joints.py`: (WIP) Contains lists of DAS66 joints for each anatomical location (based on Leiden EHR naming convention) 
+  * `src/DAS66_joints.py`: Contains lists of DAS66 joints for each anatomical location (based on Leiden EHR naming convention) 
 * `notebooks/*`: Example notebooks showing how to run the code
   * `notebooks/Example_notebook_das44.ipynb`: How to run DAS44 model (or retrain)
   * `notebooks/Example_KAN_encoder_optimization.ipynb`: How to train the ensemble KAN-encoder

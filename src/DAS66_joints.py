@@ -218,7 +218,7 @@ L_Small_Joints_66 = ['Pijn_mtp 1 links_positive',
     'Zwelling_pip 5 rechts voet_positive',
 ]
 
-l_DAS28_positive = [
+L_DAS_Joints_28 = [
     'Pijn_pols L_positive', 'Pijn_pols R_positive',
     'Pijn_pip 2 links hand_positive', 'Pijn_pip 2 rechts hand_positive',
     'Pijn_pip 3 links hand_positive', 'Pijn_pip 3 rechts hand_positive',
@@ -249,13 +249,11 @@ l_DAS28_positive = [
     'Zwelling_Elleboog L_positive', 'Zwelling_elleboog R_positive',
     'Zwelling_IP links_positive', 'Zwelling_IP rechts_positive'
 ]
-l_DAS44_positive = l_DAS28_positive + [
+L_DAS_Joints_44 = L_DAS_Joints_28 + [
     'Zwelling_sternoclaviculair L_positive', 'Zwelling_sternoclaviculair R_positive',
     'Pijn_sternoclaviculair L_positive', 'Pijn_sternoclaviculair R_positive',
     'Zwelling_acromioclaviaculair L_positive', 'Zwelling_acromioclaviaculair R_positive',
     'Pijn_acromioclaviaculair L_positive', 'Pijn_acromioclaviaculair R_positive',
-    'Pijn_knie links_positive', 'Pijn_knie rechts_positive',
-    'Zwelling_knie links_positive', 'Zwelling_knie rechts_positive',
     'Pijn_onderste spronggewricht links_positive', 'Pijn_onderste spronggewricht rechts_positive',
     'Pijn_bovenste spronggewicht links_positive', 'Pijn_bovenste spronggewricht rechts_positive',
     'Zwelling_onderste spronggewricht links_positive', 'Zwelling_onderste spronggewricht rechts_positive',
@@ -270,7 +268,7 @@ l_DAS44_positive = l_DAS28_positive + [
     'Zwelling_mtp 5 links_positive', 'Zwelling_mtp 5 rechts_positive'
 ]
 
-l_DAS66_positive = l_DAS44_positive + [
+L_DAS_Joints_66 = L_DAS_Joints_44 + [
     'Pijn_dip 2 links_positive',
      'Pijn_dip 2 rechts_positive',
      'Pijn_dip 3 links_positive',

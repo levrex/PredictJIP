@@ -190,8 +190,6 @@ L_DAS_Joints_44 = L_DAS_Joints_28 + [
     'Pijn_sternoclaviculair L_positive', 'Pijn_sternoclaviculair R_positive',
     'Zwelling_acromioclaviaculair L_positive', 'Zwelling_acromioclaviaculair R_positive',
     'Pijn_acromioclaviaculair L_positive', 'Pijn_acromioclaviaculair R_positive',
-    'Pijn_knie links_positive', 'Pijn_knie rechts_positive',
-    'Zwelling_knie links_positive', 'Zwelling_knie rechts_positive',
     'Pijn_onderste spronggewricht links_positive', 'Pijn_onderste spronggewricht rechts_positive',
     'Pijn_bovenste spronggewicht links_positive', 'Pijn_bovenste spronggewricht rechts_positive',
     'Zwelling_onderste spronggewricht links_positive', 'Zwelling_onderste spronggewricht rechts_positive',
